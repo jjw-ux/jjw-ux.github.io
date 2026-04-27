@@ -153,6 +153,9 @@
       .footer-wrap { flex-direction: column; gap: 0.4rem; text-align: center; padding: 2rem 1.5rem; }
       .competitions-table th:nth-child(2), .competitions-table td:nth-child(2),
       .competitions-table th:nth-child(4), .competitions-table td:nth-child(4) { display: none; }
+      .artwork-card { grid-template-columns: 1fr; }
+      .artwork-info { padding: 1rem 0 0.5rem; }
+      .artwork-title, .artwork-meta, .artwork-desc, .artwork-award-item { padding: 0 0.5rem; }
     }
   </style>
 </head>
@@ -202,6 +205,11 @@
   <!-- 2026 -->
   <div class="artwork-year-panel active" id="panel-2026">
     <div class="artwork-grid">
+      <div class="artwork-card" onclick="openLightbox('images/jellyfish.jpg','The Glowing Jellyfish Feast',[])">
+        <img class="artwork-thumb" src="images/jellyfish.jpg" alt="The Glowing Jellyfish Feast" loading="lazy"/>
+        <div class="artwork-overlay"><div class="overlay-title">The Glowing Jellyfish Feast</div></div>
+        <div class="artwork-info"><div class="artwork-title">The Glowing Jellyfish Feast</div><div class="artwork-meta">Colored Pencil · 2026</div><p class="artwork-desc">A massive, glowing jellyfish drifts through the deep ocean, its translucent bell shimmering in blue and pink while golden tentacles trail like ribbons in the current. Tiny jellyfish float in the background alongside colorful coral and sea creatures on the ocean floor. I wanted to capture how mysterious and magical the deep sea feels — like a whole glowing world hidden beneath the waves.</p></div>
+      </div>
       <div class="artwork-card" onclick="openLightbox('images/birthday_cake.jpg','My Birthday Cake',[])">
         <img class="artwork-thumb" src="images/birthday_cake.jpg" alt="My Birthday Cake" loading="lazy"/>
         <div class="artwork-overlay"><div class="overlay-title">My Birthday Cake</div></div>
